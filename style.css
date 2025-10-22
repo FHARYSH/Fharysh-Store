@@ -1,0 +1,356 @@
+/* Import Font dari Google */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+/* Reset CSS Dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header (Bagian Atas) */
+header {
+    background-color: #004a99; /* Warna biru tua yang elegan */
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+    border-bottom: 5px solid #ffc107; /* Aksen kuning */
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+header p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+/* Konten Utama */
+main {
+    padding: 2rem 0;
+}
+
+section {
+    padding: 2rem 0;
+    border-bottom: 1px solid #ddd;
+}
+
+section:last-child {
+    border-bottom: none;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: #004a99;
+}
+
+/* Gaya untuk Search Bar */
+#search-section {
+    padding: 2rem 0;
+    border-bottom: 1px solid #ddd;
+}
+
+#search-bar {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.1rem;
+    font-family: 'Poppins', sans-serif;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#search-bar:focus {
+    outline: none;
+    border-color: #004a99;
+    box-shadow: 0 0 10px rgba(0, 74, 153, 0.1);
+}
+
+/* Grid "Kenapa Kami?" */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    text-align: center;
+}
+
+.feature-item {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.feature-item h3 {
+    font-size: 1.25rem;
+    color: #004a99;
+    margin-bottom: 0.5rem;
+}
+
+/* Judul Kategori Produk (mis: 📱 Editing & Desain) */
+.product-section {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+.product-section h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #333;
+    text-align: left;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid #004a99;
+}
+
+/* Grid Katalog Produk */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.product-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    text-align: center;
+    padding: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex; /* Menggunakan flexbox untuk layout */
+    flex-direction: column; /* Menumpuk elemen secara vertikal */
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+.product-card img {
+    width: 80px; /* Ukuran logo */
+    height: 80px;
+    margin-bottom: 1rem;
+    align-self: center; /* Memastikan logo di tengah */
+}
+
+.product-card h2 {
+    font-size: 1.4rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+/* Ini adalah deskripsi (Format Hybrid kita) */
+.product-card .description {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 1rem;
+    flex-grow: 1; /* Ini membuat deskripsi mengisi ruang, mendorong harga & tombol ke bawah */
+}
+
+/* Ini adalah Range Harga */
+.product-card .price {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #004a99;
+    margin-bottom: 1.5rem;
+}
+
+/* Tombol Order (PENTING) */
+.btn-order {
+    display: inline-block;
+    background-color: #25D366; /* Warna Hijau WhatsApp */
+    color: #fff;
+    padding: 12px 20px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-order:hover {
+    background-color: #1DAE56;
+}
+
+/* Bagian "Cara Order" */
+#how-to-order ol {
+    max-width: 600px;
+    margin: 0 auto;
+    padding-left: 20px; /* Memberi ruang untuk nomor */
+}
+
+#how-to-order li {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    line-height: 1.7;
+}
+
+/* Bagian Info Tambahan */
+#info-tambahan .info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+#info-tambahan .info-card {
+    background: #e9f5ff; /* Warna biru muda, beda dari produk */
+    border: 1px solid #bde0ff;
+    color: #004a99;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+#info-tambahan .info-card:hover {
+    background: #d0eaff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transform: translateY(-3px);
+}
+
+/* Footer (Bagian Bawah) */
+footer {
+    background-color: #333;
+    color: #aaa;
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 2rem;
+}
+
+/* --- Responsive Navigation Bar --- */
+
+.navbar {
+    background-color: #fff;
+    padding: 1rem 0;
+    border-bottom: 1px solid #ddd;
+    position: sticky; /* Tetap menempel di atas */
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: flex-end; /* Di desktop, link ada di kanan */
+    align-items: center;
+    position: relative; /* Diperlukan untuk menu dropdown */
+}
+
+/* Judul "Kategori Produk" (Hanya tampil di HP/Tablet) */
+.nav-title {
+    display: none; /* Sembunyi di desktop */
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #004a99;
+}
+
+/* Kumpulan Link Navigasi */
+.nav-links {
+    display: flex; /* Tampil horizontal di desktop */
+    gap: 10px 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #004a99;
+    font-weight: 600;
+    font-size: 0.9rem;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: #e9f5ff;
+    color: #003366;
+}
+
+/* Ikon Hamburger (Garis Tiga) */
+.hamburger-menu {
+    display: none; /* Sembunyi di desktop */
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px; /* Jarak antar garis */
+}
+
+.hamburger-menu .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #004a99; /* Warna garis */
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+
+/* ================================= */
+/* --- INI BAGIAN RESPONSIVE-NYA --- */
+/* ================================= */
+/* Tampilan untuk Tablet dan HP (misal: 992px ke bawah) */
+@media (max-width: 992px) {
+    .navbar .container {
+        justify-content: space-between; /* Judul di kiri, hamburger di kanan */
+    }
+
+    .nav-title {
+        display: block; /* Tampilkan "Kategori Produk" */
+    }
+
+    .hamburger-menu {
+        display: flex; /* Tampilkan ikon hamburger */
+    }
+
+    .nav-links {
+        display: none; /* Sembunyikan daftar link */
+        position: absolute;
+        top: 100%; /* Tampil tepat di bawah nav bar */
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        flex-direction: column; /* Tampil vertikal */
+        padding: 1rem;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+        border-top: 1px solid #f0f0f0;
+    }
+
+    /* Kelas .active ini ditambahkan oleh JavaScript */
+    .nav-links.active {
+        display: flex; /* Tampilkan menu saat di-klik */
+    }
+
+    .nav-links a {
+        padding: 12px 10px; /* Buat tombol lebih besar di HP */
+        border-bottom: 1px solid #f4f7f6;
+    }
+
+    /* Animasi "X" untuk hamburger saat aktif */
+    .hamburger-menu.active .bar:nth-child(2) {
+        opacity: 0; /* Garis tengah menghilang */
+    }
+    .hamburger-menu.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg); /* Garis atas miring */
+    }
+    .hamburger-menu.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg); /* Garis bawah miring */
+    }
+}
