@@ -167,7 +167,7 @@ footer { background-color: #343a40; color: #adb5bd; text-align: center; padding:
 }
 
 /* ==================== Dark Mode ==================== */
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
     body { background-color: #1a1a1a; color: #e0e0e0; }
     .navbar { background-color: rgba(26, 26, 26, 0.85); border-bottom-color: #333; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3); }
     .navbar.navbar-scrolled { box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4); }
@@ -180,7 +180,7 @@ footer { background-color: #343a40; color: #adb5bd; text-align: center; padding:
     .nav-links a:hover, .dropdown-toggle:hover { color: #e0f2ff; }
     .nav-links a::after { background-color: #90cfff; }
     /* Dropdown Dark Mode */
-    .dropdown-menu { background-color: #2a2a2a; box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4); }
+    /* .dropdown-menu { background-color: #2a2a2a; box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4); }
     .category-toggle { color: #90cfff; }
     .category-toggle:hover { background-color: #383838; }
     .category-links a { color: #c0c0c0; }
@@ -206,7 +206,7 @@ footer { background-color: #343a40; color: #adb5bd; text-align: center; padding:
     .info-card.main-contact:hover { background: #004a99; }
     footer { background-color: #111; color: #777; }
     .back-to-top-btn { background-color: #0056b3; }
-    .back-to-top-btn:hover { background-color: #004a99; }
+    .back-to-top-btn:hover { background-color: #004a99; } */
     /* Dark Mode Mobile Navbar */
     @media (max-width: 992px) {
         .nav-links a:not(.dropdown-toggle) { border-bottom-color: #444; }
@@ -215,3 +215,4 @@ footer { background-color: #343a40; color: #adb5bd; text-align: center; padding:
         .category-links { background-color: #2a2a2a; border-left-color: #5cacee; }
     }
 } /* Akhir Dark Mode */
+
