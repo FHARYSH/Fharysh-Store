@@ -208,11 +208,12 @@ footer { background-color: #343a40; color: #adb5bd; text-align: center; padding:
     .back-to-top-btn { background-color: #0056b3; }
     .back-to-top-btn:hover { background-color: #004a99; } */
     /* Dark Mode Mobile Navbar */
-    @media (max-width: 992px) {
+    /* @media (max-width: 992px) {
         .nav-links a:not(.dropdown-toggle) { border-bottom-color: #444; }
         .dropdown-toggle { border-bottom-color: #444; }
         .category-toggle { background-color: #383838; }
         .category-links { background-color: #2a2a2a; border-left-color: #5cacee; }
-    }
+    } */
 } /* Akhir Dark Mode */
+
 
