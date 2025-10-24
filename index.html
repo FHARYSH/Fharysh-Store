@@ -6,455 +6,497 @@
     <title>FHARYSH STORE - Pusat Akun Premium Terpercaya</title>
     <meta name="description" content="FHARYSH STORE menyediakan akun premium Netflix, Spotify, Canva Pro, dan lainnya. Murah, Amanah, dan Bergaransi.">
     
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+    <link rel="icon" href="favicon.ico" type="image/x-icon"> 
 </head>
 <body>
 
-    <header>
-        <div class="container">
-            <h1>FHARYSH STORE</h1>
-            <p>Pusat Akun Premium Murah, Amanah, dan Bergaransi</p>
-        </div>
-    </header>
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+
     <nav class="navbar">
         <div class="container">
-            <span class="nav-title">Kategori Produk</span>
+            <a href="#hero" class="nav-brand">FHARYSH STORE</a> 
+            
+            <div class="search-container-nav">
+                 <input type="text" id="search-bar" placeholder="🔍 Cari...">
+            </div>
 
             <div class="hamburger-menu">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
             </div>
-
+            
             <div class="nav-links">
-                <a href="#editing">📱 Editing & Desain</a>
-                <a href="#streaming">🎬 Streaming & Hiburan</a>
-                <a href="#edukasi">📚 Edukasi & Pengetahuan</a>
-                <a href="#utilitas">🔐 Utilitas & Pendukung</a>
-                <a href="#info-tambahan">📊 Info Tambahan</a>
+                <a href="#hero">Home</a>
+                
+                <div class="dropdown">
+                    <a href="#katalog" class="dropdown-toggle" id="catalog-toggle">Katalog <span class="dropdown-arrow">▼</span></a>
+                    <div class="dropdown-menu" id="catalog-menu">
+                        
+                        <div class="dropdown-category">
+                            <button class="category-toggle">📱 Editing & Desain <span class="category-arrow">▶</span></button>
+                            <div class="category-links">
+                                <a href="#prod-alight-motion">Alight Motion</a>
+                                <a href="#prod-canva">Canva Pro</a>
+                                <a href="#prod-capcut">CapCut Pro</a>
+                                <a href="#prod-ibis-paint">Ibis Paint X</a>
+                                <a href="#prod-picsart">PicsArt Gold</a>
+                                <a href="#prod-remini">Remini (Pro & Lite)</a>
+                                <a href="#prod-vsco">VSCO (Plus & Pro)</a>
+                            </div>
+                        </div>
+
+                        <div class="dropdown-category">
+                            <button class="category-toggle">🎬 Streaming & Hiburan <span class="category-arrow">▶</span></button>
+                            <div class="category-links">
+                                <a href="#prod-apple-music">Apple Music</a>
+                                <a href="#prod-apple-tv">Apple TV+</a>
+                                <a href="#prod-apple-arcade">Apple Arcade</a>
+                                <a href="#prod-bstation">Bstation Premium</a>
+                                <a href="#prod-disney">Disney+ Hotstar</a>
+                                <a href="#prod-dramabox">DramaBox Premium</a>
+                                <a href="#prod-hbo">HBO Go</a>
+                                <a href="#prod-iflix">iFlix VIP</a>
+                                <a href="#prod-iqiyi">iQiyi VIP</a>
+                                <a href="#prod-loklok">Loklok VIP</a>
+                                <a href="#prod-mangotv">MangoTV Premium</a>
+                                <a href="#prod-netflix">Netflix Premium</a>
+                                <a href="#prod-primevideo">Prime Video</a>
+                                <a href="#prod-rcti">RCTI+ Premium</a>
+                                <a href="#prod-spotify">Spotify Premium</a>
+                                <a href="#prod-vidio">Vidio</a>
+                                <a href="#prod-visionplus">Vision+ Premium</a>
+                                <a href="#prod-viu">Viu Premium</a>
+                                <a href="#prod-wetv">WeTV VIP</a>
+                                <a href="#prod-youku">Youku VIP</a>
+                                <a href="#prod-youtube">YouTube Premium</a>
+                            </div>
+                        </div>
+
+                        <div class="dropdown-category">
+                            <button class="category-toggle">📚 Edukasi & AI <span class="category-arrow">▶</span></button>
+                            <div class="category-links">
+                                <a href="#prod-chatgpt">ChatGPT Plus</a>
+                                <a href="#prod-duolingo">Duolingo Super</a>
+                                <a href="#prod-gemini">Gemini Pro</a>
+                                <a href="#prod-wattpad">Wattpad Premium</a>
+                            </div>
+                        </div>
+                        
+                        <div class="dropdown-category">
+                            <button class="category-toggle">🔐 Utilitas & Lainnya <span class="category-arrow">▶</span></button>
+                            <div class="category-links">
+                                <a href="#prod-camscanner">CamScanner</a>
+                                <a href="#prod-discord-nitro">Discord Nitro</a>
+                                <a href="#prod-discord-boost">Nitro Boost</a>
+                                <a href="#prod-getcontact">GetContact</a>
+                                <a href="#prod-ms365">Microsoft 365</a>
+                                <a href="#prod-telegram">Telegram Premium</a>
+                                <a href="#prod-vcc">VCC</a>
+                                <a href="#prod-vpn">VPN Premium</a>
+                                <a href="#prod-zoom">Zoom Pro</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                
+                <a href="#why-us">Tentang</a>
+                <a href="#how-to-order">Cara Order</a>
+                <a href="#kontak">Kontak</a> 
             </div>
         </div>
     </nav>
+
+    <section id="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h2 data-aos="fade-up">Unlock Dunia <span class="typed-text"></span></h2>
+            <p data-aos="fade-up" data-aos-delay="200">Akses premium untuk hiburan, kreativitas, dan produktivitas Anda. Amanah, Cepat, dan Bergaransi.</p>
+            <a href="#katalog" class="btn btn-primary" data-aos="fade-up" data-aos-delay="400">Lihat Katalog Lengkap</a>
+        </div>
+    </section>
+
     <main>
         <div class="container">
             
-            <section id="search-section">
-                <input type="text" id="search-bar" placeholder="🔍 Cari produk di sini... (cth: Netflix, Spotify)">
-            </section>
-
-            <section id="why-us">
-                <h2>Kenapa Beli di Kami?</h2>
+            <section id="why-us" data-aos="fade-up">
+                 <h2>Tentang Kami</h2>
+                <p style="text-align: center; max-width: 700px; margin: -1rem auto 2rem auto;">FHARYSH STORE adalah penyedia akun premium terpercaya Anda. Kami berkomitmen memberikan akses mudah dan terjangkau ke berbagai layanan digital favorit Anda.</p>
                 <div class="features-grid">
-                    <div class="feature-item">
+                    <div class="feature-item" data-aos="fade-up" data-aos-delay="100">
                         <h3>✓ Amanah & Terpercaya</h3>
-                        <p>Sudah melayani ratusan pelanggan dengan jujur.</p>
+                        <p>Transaksi aman dan jujur adalah prioritas kami.</p>
                     </div>
-                    <div class="feature-item">
+                    <div class="feature-item" data-aos="fade-up" data-aos-delay="200">
                         <h3>✓ Garansi Penuh</h3>
-                        <p>Garansi penuh selama masa aktif sesuai pesanan.</p>
+                        <p>Garansi sesuai durasi pesanan Anda.</p>
                     </div>
-                    <div class="feature-item">
+                    <div class="feature-item" data-aos="fade-up" data-aos-delay="300">
                         <h3>✓ Proses Cepat</h3>
-                        <p>Proses cepat 5-15 menit setelah pembayaran.</p>
+                        <p>Akun siap dalam 5-15 menit setelah pembayaran.</p>
                     </div>
                 </div>
             </section>
+            
+            <div id="katalog" style="position: relative; top: -80px;"></div> 
 
             <section id="editing" class="product-section">
-                <h2>📱 Editing & Desain</h2>
+                <h2 data-aos="fade-right">📱 Editing & Desain</h2>
                 <div class="product-grid">
-
-                    <div class="product-card">
-                        <img src="https://i.ibb.co.com/hJWJp2bb/image.png" alt="Logo Alight Motion">
+                    <div class="product-card" id="prod-alight-motion" data-aos="fade-up">
+                        <img src="https://i.ibb.co.com/hJWJp2bb/image.png" alt="Logo Alight Motion" loading="lazy">
                         <h2>Alight Motion</h2>
                         <p class="description">Varian Android & iOS (Akun seller). Durasi 1 Tahun. Garansi 6 Bulan.</p>
                         <p class="price">Rp 11.000 - Rp 13.000</p>
                         <a href="https://wa.me/6285853409699?text=Halo%20FHARYSH%20STORE,%20saya%20mau%20order%20Alight%20Motion" class="btn-order" target="_blank">Order via WA</a>
                     </div>
-
-                    <div class="product-card">
-                        <img src="https://cdn.simpleicons.org/canva/00C4CC" alt="Logo Canva">
+                    <div class="product-card" id="prod-canva" data-aos="fade-up" data-aos-delay="100">
+                        <img src="https://cdn.simpleicons.org/canva/00C4CC" alt="Logo Canva" loading="lazy">
                         <h2>Canva Pro</h2>
                         <p class="description">Varian Member, Admin, & Owner. Durasi Harian s/d Lifetime. Invite via Email. Garansi bervariasi.</p>
                         <p class="price">Rp 1.000 - Rp 20.000</p>
                         <a href="https://wa.me/6285853409699?text=Halo%20FHARYSH%20STORE,%20saya%20mau%20order%20Canva%20Pro" class="btn-order" target="_blank">Order via WA</a>
                     </div>
-
-                    <div class="product-card">
-                        <img src="https://i.ibb.co.com/k2g8KF4v/image.png" alt="Logo CapCut">
+                    <div class="product-card" id="prod-capcut" data-aos="fade-up" data-aos-delay="200">
+                        <img src="https://i.ibb.co.com/k2g8KF4v/image.png" alt="Logo CapCut" loading="lazy">
                         <h2>CapCut Pro</h2>
                         <p class="description">Varian Sharing & Private. Durasi 7 hari & 1 bulan. Akun seller (via email). Garansi bervariasi.</p>
                         <p class="price">Rp 8.000 - Rp 50.000</p>
                         <a href="https://wa.me/6285853409699?text=Halo%20FHARYSH%20STORE,%20saya%20mau%20order%20CapCut%20Pro" class="btn-order" target="_blank">Order via WA</a>
                     </div>
-
-                    <div class="product-card">
-                        <img src="https://i.ibb.co.com/990K8ZSg/image.png" alt="Logo Ibis Paint">
+                     <div class="product-card" id="prod-ibis-paint" data-aos="fade-up">
+                        <img src="https://i.ibb.co.com/990K8ZSg/image.png" alt="Logo Ibis Paint" loading="lazy">
                         <h2>Ibis Paint X</h2>
                         <p class="description">Varian Sharing. Durasi 1 Tahun. Akun dari seller. Garansi 6 bulan.</p>
                         <p class="price">Rp 20.000</p>
                         <a href="https://wa.me/6285853409699?text=Halo%20FHARYSH%20STORE,%20saya%20mau%20order%20Ibis%20Paint%20X" class="btn-order" target="_blank">Order via WA</a>
                     </div>
-
-                    <div class="product-card">
-                        <img src="https://i.ibb.co.com/cchBcdwc/image.png" alt="Logo PicsArt">
+                     <div class="product-card" id="prod-picsart" data-aos="fade-up" data-aos-delay="100">
+                        <img src="https://i.ibb.co.com/cchBcdwc/image.png" alt="Logo PicsArt" loading="lazy">
                         <h2>PicsArt Gold</h2>
                         <p class="description">Varian Sharingan & Private. Durasi 1 bulan. Akun dari seller. Full garansi.</p>
                         <p class="price">Rp 10.000 - Rp 13.000</p>
                         <a href="https://wa.me/6285853409699?text=Halo%20FHARYSH%20STORE,%20saya%20mau%20order%20PicsArt%20Gold" class="btn-order" target="_blank">Order via WA</a>
                     </div>
-
-                    <div class="product-card">
-                        <img src="https://i.ibb.co.com/BH3XFGZv/image.png" alt="Logo Remini">
+                    <div class="product-card" id="prod-remini" data-aos="fade-up" data-aos-delay="200">
+                        <img src="https://i.ibb.co.com/BH3XFGZv/image.png" alt="Logo Remini" loading="lazy">
                         <h2>Remini (Pro & Lite)</h2>
                         <p class="description">Varian Sharing Pro & Lite. Durasi 1 Tahun (Gar 6 Bln). Android Only, login via APK. Akun seller.</p>
                         <p class="price">Rp 35.000 - Rp 45.000</p>
-                        <a href="https://wa.me/6285853409699?tex t=Halo%20FHARYSH%20STORE,%20saya%20mau%20order%20Remini%20Pro" class="btn-order" target="_blank">Order via WA</a>
+                        <a href="https://wa.me/6285853409699?text=Halo%20FHARYSH%20STORE,%20saya%20mau%20order%20Remini%20Pro" class="btn-order" target="_blank">Order via WA</a>
                     </div>
-
-                    <div class="product-card">
-                        <img src="https://cdn.simpleicons.org/vsco/000000" alt="Logo VSCO">
+                    <div class="product-card" id="prod-vsco" data-aos="fade-up">
+                        <img src="https://cdn.simpleicons.org/vsco/000000" alt="Logo VSCO" loading="lazy">
                         <h2>VSCO (Plus & Pro)</h2>
                         <p class="description">Varian Sharing Plan Plus (Android) & Pro (iOS). Durasi 1 tahun. Akun seller. Garansi 6 bulan.</p>
                         <p class="price">Rp 20.000 - Rp 22.000</p>
                         <a href="https://wa.me/6285853409699?text=Halo%20FHARYSH%20STORE,%20saya%20mau%20order%20VSCO" class="btn-order" target="_blank">Order via WA</a>
                     </div>
-
                 </div>
             </section>
             
             <section id="streaming" class="product-section">
-                <h2>🎬 Streaming & Hiburan</h2>
-                <div class="product-grid">
-
-                    <div class="product-card">
-                        <img src="https://cdn.simpleicons.org/applemusic/FA58D8" alt="Logo Apple Music">
+                 <h2 data-aos="fade-right">🎬 Streaming & Hiburan</h2>
+                 <div class="product-grid">
+                     <div class="product-card" id="prod-apple-music" data-aos="fade-up">
+                        <img src="https://cdn.simpleicons.org/applemusic/FA58D8" alt="Logo Apple Music" loading="lazy">
                         <h2>Apple Music</h2>
                         <p class="description">Varian Via Invite & Indplan/Famhead. Durasi 1 bulan. Full garansi. Bisa akun C/S.</p>
                         <p class="price">Rp 9.000 - Rp 13.000</p>
                         <a href="https://wa.me/6285853409699?text=Halo%20FHARYSH%20STORE,%20saya%20mau%20order%20Apple%20Music" class="btn-order" target="_blank">Order via WA</a>
                     </div>
-
-                    <div class="product-card">
-                        <img src="https://cdn.simpleicons.org/appletv/000000" alt="Logo Apple TV">
+                    <div class="product-card" id="prod-apple-tv" data-aos="fade-up" data-aos-delay="100">
+                        <img src="https://cdn.simpleicons.org/appletv/000000" alt="Logo Apple TV" loading="lazy">
                         <h2>Apple TV+</h2>
                         <p class="description">Varian Sharing & Private. Durasi 1 bulan. Full garansi.</p>
                         <p class="price">Rp 22.000 - Rp 39.000</p>
                         <a href="https://wa.me/6285853409699?text=Halo%20FHARYSH%20STORE,%20saya%20mau%20order%20Apple%20TV" class="btn-order" target="_blank">Order via WA</a>
                     </div>
-
-                    <div class="product-card">
-                        <img src="https://cdn.simpleicons.org/applearcade/000000" alt="Logo Apple Arcade">
+                    <div class="product-card" id="prod-apple-arcade" data-aos="fade-up" data-aos-delay="200">
+                        <img src="https://cdn.simpleicons.org/applearcade/000000" alt="Logo Apple Arcade" loading="lazy">
                         <h2>Apple Arcade</h2>
                         <p class="description">Varian Giftcard. Durasi 2 bulan. Full garansi.</p>
                         <p class="price">Rp 12.000</p>
                         <a href="https://wa.me/6285853409699?text=Halo%20FHARYSH%20STORE,%20saya%20mau%20order%20Apple%20Arcade" class="btn-order" target="_blank">Order via WA</a>
                     </div>
-
-                    <div class="product-card">
-                        <img src="https://cdn.simpleicons.org/bilibili/00A1D6" alt="Logo Bstation">
+                    <div class="product-card" id="prod-bstation" data-aos="fade-up">
+                        <img src="https://cdn.simpleicons.org/bilibili/00A1D6" alt="Logo Bstation" loading="lazy">
                         <h2>Bstation Premium</h2>
                         <p class="description">Varian Sharing & Private. Durasi 1 bln, 3 bln, 1 thn. Akun dari seller. Full garansi (1 thn garansi 6 bln).</p>
                         <p class="price">Rp 10.000 - Rp 40.000</p>
                         <a href="https://wa.me/6285853409699?text=Halo%20FHARYSH%20STORE,%20saya%20mau%20order%20Bstation%20Premium" class="btn-order" target="_blank">Order via WA</a>
                     </div>
-
-                    <div class="product-card">
-                        <img src="https://i.ibb.co.com/rf3sZXvv/image.png" alt="Logo Disney+">
+                    <div class="product-card" id="prod-disney" data-aos="fade-up" data-aos-delay="100">
+                        <img src="https://i.ibb.co.com/rf3sZXvv/image.png" alt="Logo Disney+" loading="lazy">
                         <h2>Disney+ Hotstar</h2>
                         <p class="description">Varian Sharing (Basic/Premium) & Private. Durasi Harian s/d 1 Bulan. Akun seller/nomor C/S. Full garansi.</p>
                         <p class="price">Rp 10.000 - Rp 130.000</p>
                         <a href="https://wa.me/6285853409699?text=Halo%20FHARYSH%20STORE,%20saya%20mau%20order%20Disney%2B%20Hotstar" class="btn-order" target="_blank">Order via WA</a>
                     </div>
-
-                    <div class="product-card">
-                        <img src="https://i.ibb.co.com/TZG4jss/image.png" alt="Logo DramaBox">
+                    <div class="product-card" id="prod-dramabox" data-aos="fade-up" data-aos-delay="200">
+                        <img src="https://i.ibb.co.com/TZG4jss/image.png" alt="Logo DramaBox" loading="lazy"> 
                         <h2>DramaBox Premium</h2>
                         <p class="description">Varian Sharing. Durasi 1 bln, 3 bln, 6 bln, 1 thn. Akun dari seller. Full garansi.</p>
                         <p class="price">Rp 15.000 - Rp 60.000</p>
                         <a href="https://wa.me/6285853409699?text=Halo%20FHARYSH%20STORE,%20saya%20mau%20order%20DramaBox%20Premium" class="btn-order" target="_blank">Order via WA</a>
                     </div>
-
-                    <div class="product-card">
-                        <img src="https://cdn.simpleicons.org/hbo/000000" alt="Logo HBO">
+                    <div class="product-card" id="prod-hbo" data-aos="fade-up">
+                        <img src="https://cdn.simpleicons.org/hbo/000000" alt="Logo HBO" loading="lazy">
                         <h2>HBO Go</h2>
                         <p class="description">Varian Sharing (3u/5u/8u) & Private. Durasi 1 bulan. Akun seller. Full garansi. Login 1 device (TV order 2 slot).</p>
                         <p class="price">Rp 26.000 - Rp 60.000</p>
                         <a href="https://wa.me/6285853409699?text=Halo%20FHARYSH%20STORE,%20saya%20mau%20order%20HBO%20Go" class="btn-order" target="_blank">Order via WA</a>
                     </div>
-
-                    <div class="product-card">
-                        <img src="https://i.ibb.co.com/21cyK2kM/image.png" alt="Logo iFlix">
+                    <div class="product-card" id="prod-iflix" data-aos="fade-up" data-aos-delay="100">
+                        <img src="https://i.ibb.co.com/21cyK2kM/image.png" alt="Logo iFlix" loading="lazy">
                         <h2>iFlix VIP</h2>
                         <p class="description">Varian Sharing & Private. Durasi 1 bulan. Akun dari seller. Full garansi.</p>
                         <p class="price">Rp 18.000 - Rp 37.000</p>
                         <a href="https://wa.me/6285853409699?text=Halo%20FHARYSH%20STORE,%20saya%20mau%20order%20iFlix%20VIP" class="btn-order" target="_blank">Order via WA</a>
                     </div>
-
-                    <div class="product-card">
-                        <img src="https://i.ibb.co.com/RGjRd7qV/pngegg.png" alt="Logo iQiyi">
+                    <div class="product-card" id="prod-iqiyi" data-aos="fade-up" data-aos-delay="200">
+                        <img src="https://i.ibb.co.com/RGjRd7qV/pngegg.png" alt="Logo iQiyi" loading="lazy">
                         <h2>iQiyi VIP</h2>
                         <p class="description">Varian Sharing & Private (Plan Standar/Premium). Durasi 1 bln, 3 bln, 1 thn. Full garansi.</p>
                         <p class="price">Rp 11.000 - Rp 45.000</p>
                         <a href="https://wa.me/6285853409699?text=Halo%20FHARYSH%20STORE,%20saya%20mau%20order%20iQiyi%20VIP" class="btn-order" target="_blank">Order via WA</a>
                     </div>
-
-                    <div class="product-card">
-                        <img src="https://i.ibb.co.com/q6dHzFQ/image.png" alt="Logo Loklok">
+                    <div class="product-card" id="prod-loklok" data-aos="fade-up">
+                        <img src="https://i.ibb.co.com/q6dHzFQ/image.png" alt="Logo Loklok" loading="lazy"> 
                         <h2>Loklok VIP</h2>
                         <p class="description">Varian Sharing (Basic/Standar) & Private. Durasi 1 bulan. Akun seller. Full garansi. (1 thn garansi 6 bln).</p>
                         <p class="price">Mulai dari Rp 20.000</p>
                         <a href="https://wa.me/6285853409699?text=Halo%20FHARYSH%20STORE,%20saya%20mau%20order%20Loklok%20VIP" class="btn-order" target="_blank">Order via WA</a>
                     </div>
-
-                    <div class="product-card">
-                        <img src="https://i.ibb.co.com/tPMMrxSr/pngegg-1.png" alt="Logo MangoTV">
+                    <div class="product-card" id="prod-mangotv" data-aos="fade-up" data-aos-delay="100">
+                        <img src="https://i.ibb.co.com/tPMMrxSr/pngegg-1.png" alt="Logo MangoTV" loading="lazy">
                         <h2>MangoTV Premium</h2>
                         <p class="description">Varian Sharing. Durasi 1 bln, 3 bln, 6 bln, 1 thn. Akun dari seller. Full garansi.</p>
                         <p class="price">Rp 10.000 - Rp 50.000</p>
                         <a href="https://wa.me/6285853409699?text=Halo%20FHARYSH%20STORE,%20saya%20mau%20order%20MangoTV%20Premium" class="btn-order" target="_blank">Order via WA</a>
                     </div>
-
-                    <div class="product-card">
-                        <img src="https://cdn.simpleicons.org/netflix/E50914" alt="Logo Netflix">
+                    <div class="product-card" id="prod-netflix" data-aos="fade-up" data-aos-delay="200">
+                        <img src="https://cdn.simpleicons.org/netflix/E50914" alt="Logo Netflix" loading="lazy">
                         <h2>Netflix Premium</h2>
                         <p class="description">Varian Sharing (1p1u/1p2u), Private, Semiprivate, Single Screen. Durasi harian & bulanan. Akun seller. Full garansi.</p>
                         <p class="price">Rp 9.000 - Rp 55.000</p>
                         <a href="https://wa.me/6285853409699?text=Halo%20FHARYSH%20STORE,%20saya%20mau%20order%20Netflix%20Premium" class="btn-order" target="_blank">Order via WA</a>
                     </div>
-
-                    <div class="product-card">
-                        <img src="https://i.ibb.co.com/7x16vqjJ/image-removebg-preview.png" alt="Logo Prime Video">
+                    <div class="product-card" id="prod-primevideo" data-aos="fade-up">
+                        <img src="https://i.ibb.co.com/7x16vqjJ/image-removebg-preview.png" alt="Logo Prime Video" loading="lazy">
                         <h2>Prime Video</h2>
                         <p class="description">Varian Sharingan (4u) & Private. Durasi 1 bulan. Akun seller. Full garansi. All device, limit 3 screen.</p>
                         <p class="price">Rp 10.000 - Rp 15.000</p>
                         <a href="https://wa.me/6285853409699?text=Halo%20FHARYSH%20STORE,%20saya%20mau%20order%20Prime%20Video" class="btn-order" target="_blank">Order via WA</a>
                     </div>
-
-                    <div class="product-card">
-                        <img src="https://i.ibb.co.com/bgzjjC7x/image.png" alt="Logo RCTI+">
+                    <div class="product-card" id="prod-rcti" data-aos="fade-up" data-aos-delay="100">
+                        <img src="https://i.ibb.co.com/bgzjjC7x/image.png" alt="Logo RCTI+" loading="lazy"> 
                         <h2>RCTI+ Premium</h2>
                         <p class="description">Varian Private & Sharing (2u). Durasi 7 hari & 1 bulan. Legal paid, all device. Garansi backfree.</p>
                         <p class="price">Rp 20.000 - Rp 28.000</p>
                         <a href="https://wa.me/6285853409699?text=Halo%20FHARYSH%20STORE,%20saya%20mau%20order%20RCTI%2B%20Premium" class="btn-order" target="_blank">Order via WA</a>
                     </div>
-
-                    <div class="product-card">
-                        <img src="https://cdn.simpleicons.org/spotify/1ED760" alt="Logo Spotify">
+                    <div class="product-card" id="prod-spotify" data-aos="fade-up" data-aos-delay="200">
+                        <img src="https://cdn.simpleicons.org/spotify/1ED760" alt="Logo Spotify" loading="lazy">
                         <h2>Spotify Premium</h2>
                         <p class="description">Varian Famplan (Fullgar/Nogar), Famhead (Gar/Nogar Mesir), Indplan (Nogar). Durasi 1-4 bulan. Ready (tanya admin).</p>
                         <p class="price">Rp 14.000 - Rp 102.000</p>
                         <a href="https://wa.me/6285853409699?text=Halo%20FHARYSH%20STORE,%20saya%20mau%20order%20Spotify%20Premium" class="btn-order" target="_blank">Order via WA</a>
                     </div>
-
-                    <div class="product-card">
-                        <img src="https://i.ibb.co.com/cS38Zn19/image.png" alt="Logo Vidio">
+                    <div class="product-card" id="prod-vidio" data-aos="fade-up">
+                        <img src="https://i.ibb.co.com/cS38Zn19/image.png" alt="Logo Vidio" loading="lazy"> 
                         <h2>Vidio (Platinum & Diamond)</h2>
                         <p class="description">Varian Platinum & Diamond (Mobile/All Device). Durasi 1 bulan & 1 tahun. Akun seller. Garansi bervariasi.</p>
                         <p class="price">Rp 20.000 - Rp 95.000</p>
                         <a href="https://wa.me/6285853409699?text=Halo%20FHARYSH%20STORE,%20saya%20mau%20order%20Vidio%20Premium" class="btn-order" target="_blank">Order via WA</a>
                     </div>
-
-                    <div class="product-card">
-                        <img src="https://i.ibb.co.com/d4FX3LTy/image.png" alt="Logo Vision+">
+                    <div class="product-card" id="prod-visionplus" data-aos="fade-up" data-aos-delay="100">
+                        <img src="https://i.ibb.co.com/d4FX3LTy/image.png" alt="Logo Vision+" loading="lazy"> 
                         <h2>Vision+ Premium</h2>
                         <p class="description">Varian Private. Durasi 1 bulan. Legal paid, all devices. Garansi backfree.</p>
                         <p class="price">Rp 28.000</p>
                         <a href="https://wa.me/6285853409699?text=Halo%20FHARYSH%20STORE,%20saya%20mau%20order%20Vision%2B%20Premium" class="btn-order" target="_blank">Order via WA</a>
                     </div>
-
-                    <div class="product-card">
-                        <img src="https://i.ibb.co.com/Kpqd6TL4/image.png" alt="Logo Viu">
+                    <div class="product-card" id="prod-viu" data-aos="fade-up" data-aos-delay="200">
+                        <img src="https://i.ibb.co.com/Kpqd6TL4/image.png" alt="Logo Viu" loading="lazy"> 
                         <h2>Viu Premium</h2>
                         <p class="description">Varian Private Anti Limit. Durasi 1, 2, 3 bln, 1 thn. Akun seller. Full garansi (1 thn garansi 6 bln). Bulk 5+ harga spesial.</p>
                         <p class="price">Rp 8.500 - Rp 25.000</p>
                         <a href="https://wa.me/6285853409699?text=Halo%20FHARYSH%20STORE,%20saya%20mau%20order%20Viu%20Premium" class="btn-order" target="_blank">Order via WA</a>
                     </div>
-
-                    <div class="product-card">
-                        <img src="https://i.ibb.co.com/7tp3jWM4/image.png" alt="Logo WeTV">
+                    <div class="product-card" id="prod-wetv" data-aos="fade-up">
+                        <img src="https://i.ibb.co.com/7tp3jWM4/image.png" alt="Logo WeTV" loading="lazy">
                         <h2>WeTV VIP</h2>
                         <p class="description">Varian Sharing (3u/6u) & Private. Durasi 1 bulan. Akun seller. Full garansi, login 1 device.</p>
                         <p class="price">Rp 13.000 - Rp 30.000</p>
                         <a href="https://wa.me/6285853409699?text=Halo%20FHARYSH%20STORE,%20saya%20mau%20order%20WeTV%20VIP" class="btn-order" target="_blank">Order via WA</a>
                     </div>
-
-                    <div class="product-card">
-                        <img src="https://i.ibb.co.com/7xzT8MGp/image.png" alt="Logo Youku">
+                    <div class="product-card" id="prod-youku" data-aos="fade-up" data-aos-delay="100">
+                        <img src="https://i.ibb.co.com/7xzT8MGp/image.png" alt="Logo Youku" loading="lazy">
                         <h2>Youku VIP</h2>
                         <p class="description">Varian Sharing & Private. Durasi 1 bln, 3 bln, 1 thn. Akun seller. Garansi (1 thn garansi 6 bln). Sharing tidak bisa di TV.</p>
                         <p class="price">Rp 10.000 - Rp 81.000</p>
                         <a href="https://wa.me/6285853409699?text=Halo%20FHARYSH%20STORE,%20saya%20mau%20order%20Youku%20VIP" class="btn-order" target="_blank">Order via WA</a>
                     </div>
-
-                    <div class="product-card">
-                        <img src="https://cdn.simpleicons.org/youtube/FF0000" alt="Logo YouTube">
+                    <div class="product-card" id="prod-youtube" data-aos="fade-up" data-aos-delay="200">
+                        <img src="https://cdn.simpleicons.org/youtube/FF0000" alt="Logo YouTube" loading="lazy">
                         <h2>YouTube Premium</h2>
                         <p class="description">Varian Famplan (invite), Mix plan, & Indplan/Famhead. Durasi 1-3 bulan. Email cust/seller. Garansi bervariasi.</p>
                         <p class="price">Rp 6.500 - Rp 30.000</p>
                         <a href="https://wa.me/6285853409699?text=Halo%20FHARYSH%20STORE,%20saya%20mau%20order%20YouTube%20Premium" class="btn-order" target="_blank">Order via WA</a>
                     </div>
-
-                </div>
+                 </div>
             </section>
 
-            <section id="edukasi" class="product-section">
-                <h2>📚 Edukasi & Pengetahuan</h2>
-                <div class="product-grid">
-
-                    <div class="product-card">
-                        <img src="https://cdn.simpleicons.org/openai/412991" alt="Logo ChatGPT">
+             <section id="edukasi" class="product-section">
+                 <h2 data-aos="fade-right">📚 Edukasi & Pengetahuan</h2>
+                 <div class="product-grid">
+                      <div class="product-card" id="prod-chatgpt" data-aos="fade-up">
+                        <img src="https://cdn.simpleicons.org/openai/412991" alt="Logo ChatGPT" loading="lazy">
                         <h2>ChatGPT Plus</h2>
                         <p class="description">Varian Sharing (8u/10u) & Private. Durasi 1 bulan. Akun dari seller. Full garansi.</p>
                         <p class="price">Rp 28.000 - Rp 205.000</p>
                         <a href="https://wa.me/6285853409699?text=Halo%20FHARYSH%20STORE,%20saya%20mau%20order%20ChatGPT%20Plus" class="btn-order" target="_blank">Order via WA</a>
                     </div>
-
-                    <div class="product-card">
-                        <img src="https://cdn.simpleicons.org/duolingo/58CC02" alt="Logo Duolingo">
+                    <div class="product-card" id="prod-duolingo" data-aos="fade-up" data-aos-delay="100">
+                        <img src="https://cdn.simpleicons.org/duolingo/58CC02" alt="Logo Duolingo" loading="lazy">
                         <h2>Duolingo Super</h2>
                         <p class="description">Varian Head (invite 5 member) & Via Invite. Durasi 14 hari & 1 bulan. Full garansi.</p>
                         <p class="price">Rp 7.000 - Rp 15.000</p>
                         <a href="https://wa.me/6285853409699?text=Halo%20FHARYSH%20STORE,%20saya%20mau%20order%20Duolingo%20Super" class="btn-order" target="_blank">Order via WA</a>
                     </div>
-
-                    <div class="product-card">
-                        <img src="https://i.ibb.co.com/gLBxk6r3/image.png" alt="Logo Gemini">
+                    <div class="product-card" id="prod-gemini" data-aos="fade-up" data-aos-delay="200">
+                        <img src="https://i.ibb.co.com/gLBxk6r3/image.png" alt="Logo Gemini" loading="lazy">
                         <h2>Gemini Pro</h2>
                         <p class="description">Varian Private. Durasi 1 Bln (Full Gar) & 1 Thn (No Gar). Wajib email sendiri (akun seller +5k). Include Google One (1 Thn).</p>
                         <p class="price">Rp 10.000 - Rp 35.000</p>
-                        <a href="https://wa.me/6285853409699?text=Halo%20FHARYSH%20STORE,%20saya%20mau%20order%20Gemini%20Pro" class="btn-order" target="_blank">Order via WA</a>                        
+                        <a href="https://wa.me/6285853409699?text=Halo%20FHARYSH%20STORE,%20saya%20mau%20order%20Gemini%20Pro" class="btn-order" target="_blank">Order via WA</a>
                     </div>
-
-                    <div class="product-card">
-                        <img src="https://cdn.simpleicons.org/wattpad/FF5700" alt="Logo Wattpad">
+                    <div class="product-card" id="prod-wattpad" data-aos="fade-up">
+                        <img src="https://cdn.simpleicons.org/wattpad/FF5700" alt="Logo Wattpad" loading="lazy">
                         <h2>Wattpad Premium</h2>
                         <p class="description">Varian Sharing & Private. Durasi 1 bulan & 1 tahun. Akun dari seller. Full garansi.</p>
                         <p class="price">Mulai dari Rp 11.000</p>
                         <a href="https://wa.me/6285853409699?text=Halo%20FHARYSH%20STORE,%20saya%20mau%20order%20Wattpad%20Premium" class="btn-order" target="_blank">Order via WA</a>
                     </div>
-
-                </div>
+                 </div>
             </section>
 
-            <section id="utilitas" class="product-section">
-                <h2>🔐 Utilitas & Pendukung</h2>
-                <div class="product-grid">
-
-                    <div class="product-card">
-                        <img src="https://i.ibb.co.com/DHLB1zYV/image.png" alt="Logo CamScanner">
+             <section id="utilitas" class="product-section">
+                 <h2 data-aos="fade-right">🔐 Utilitas & Pendukung</h2>
+                 <div class="product-grid">
+                      <div class="product-card" id="prod-camscanner" data-aos="fade-up">
+                        <img src="https://i.ibb.co.com/DHLB1zYV/image.png" alt="Logo CamScanner" loading="lazy">
                         <h2>CamScanner Premium</h2>
                         <p class="description">Varian Sharing. Durasi 1 Tahun. Akun dari seller. Garansi 6 bulan.</p>
                         <p class="price">Rp 15.000</p>
                         <a href="https://wa.me/6285853409699?text=Halo%20FHARYSH%20STORE,%20saya%20mau%20order%20CamScanner" class="btn-order" target="_blank">Order via WA</a>
                     </div>
-
-                    <div class="product-card">
-                        <img src="https://cdn.simpleicons.org/discord/5865F2" alt="Logo Discord Nitro">
+                    <div class="product-card" id="prod-discord-nitro" data-aos="fade-up" data-aos-delay="100">
+                        <img src="https://cdn.simpleicons.org/discord/5865F2" alt="Logo Discord Nitro" loading="lazy">
                         <h2>Discord Nitro + 2 Boosts</h2>
                         <p class="description">Varian 1 bulan & 1 tahun. Proses via login (No Rush). Jaspay +5k.</p>
                         <p class="price">Rp 65.000 - Rp 650.000</p>
                         <a href="https://wa.me/6285853409699?text=Halo%20FHARYSH%20STORE,%20saya%20mau%20order%20Discord%20Nitro%20%2B%20Boosts" class="btn-order" target="_blank">Order via WA</a>
                     </div>
-
-                    <div class="product-card">
-                        <img src="https://cdn.simpleicons.org/discord/5865F2" alt="Logo Discord Nitro">
+                    <div class="product-card" id="prod-discord-boost" data-aos="fade-up" data-aos-delay="200">
+                        <img src="https://cdn.simpleicons.org/discord/5865F2" alt="Logo Discord Nitro" loading="lazy">
                         <h2>Nitro Boost (Link)</h2>
                         <p class="description">Varian 1 bulan (kosong) & 3 bulan. Syarat: akun 30+ days & belum pernah nitro.</p>
                         <p class="price">Rp 10.000 - Rp 40.000</p>
                         <a href="https://wa.me/6285853409699?text=Halo%20FHARYSH%20STORE,%20saya%20mau%20order%20Nitro%20Boost%20Link" class="btn-order" target="_blank">Order via WA</a>
                     </div>
-
-                    <div class="product-card">
-                        <img src="https://i.ibb.co.com/TM3VhPGR/image.png" alt="Logo GetContact">
+                    <div class="product-card" id="prod-getcontact" data-aos="fade-up">
+                        <img src="https://i.ibb.co.com/TM3VhPGR/image.png" alt="Logo GetContact" loading="lazy"> 
                         <h2>GetContact Premium</h2>
                         <p class="description">Durasi 1 bulan (25-30 hari). Aktivasi via nomor C/S (wajib standby). Full garansi.</p>
                         <p class="price">Rp 15.000</p>
                         <a href="https://wa.me/6285853409699?text=Halo%20FHARYSH%20STORE,%20saya%20mau%20order%20GetContact%20Premium" class="btn-order" target="_blank">Order via WA</a>
                     </div>
-
-                    <div class="product-card">
-                        <img src="https://i.ibb.co.com/mCPbbVKV/image.png" alt="Logo MS365">
+                    <div class="product-card" id="prod-ms365" data-aos="fade-up" data-aos-delay="100">
+                        <img src="https://i.ibb.co.com/mCPbbVKV/image.png" alt="Logo MS365" loading="lazy">
                         <h2>Microsoft 365</h2>
                         <p class="description">Varian Famplan (via invite). Durasi 1 bulan. Full garansi.</p>
                         <p class="price">Rp 10.000</p>
                         <a href="https://wa.me/6285853409699?text=Halo%20FHARYSH%20STORE,%20saya%20mau%20order%20Microsoft%20365" class="btn-order" target="_blank">Order via WA</a>
                     </div>
-
-                    <div class="product-card">
-                        <img src="https://cdn.simpleicons.org/telegram/26A5E4" alt="Logo Telegram">
+                    <div class="product-card" id="prod-telegram" data-aos="fade-up" data-aos-delay="200">
+                        <img src="https://cdn.simpleicons.org/telegram/26A5E4" alt="Logo Telegram" loading="lazy">
                         <h2>Telegram Premium</h2>
                         <p class="description">Varian Via Login & Via Gift. Durasi 1, 3, 6, 12 bulan. Privasi aman. Full warranty backfree.</p>
                         <p class="price">Rp 60.000 - Rp 510.000</p>
                         <a href="https://wa.me/6285853409699?text=Halo%20FHARYSH%20STORE,%20saya%20mau%20order%20Telegram%20Premium" class="btn-order" target="_blank">Order via WA</a>
                     </div>
-
-                    <div class="product-card">
-                        <img src="https://i.ibb.co.com/RTrZY1yY/image.png" alt="Logo VCC">
+                    <div class="product-card" id="prod-vcc" data-aos="fade-up">
+                        <img src="https://i.ibb.co.com/RTrZY1yY/image.png" alt="Logo VCC" loading="lazy"> 
                         <h2>VCC (Virtual Credit Card)</h2>
                         <p class="description">Varian 0$ & 1$ (AUS Visa / IND MC). Untuk hit trials. Aktif bbrp jam. Saldo wajib refund.</p>
                         <p class="price">Rp 5.000 - Rp 9.000</p>
                         <a href="https://wa.me/6285853409699?text=Halo%20FHARYSH%20STORE,%20saya%20mau%20order%20VCC" class="btn-order" target="_blank">Order via WA</a>
                     </div>
-
-                    <div class="product-card">
-                        <img src="https://i.ibb.co.com/rR2W03Nj/image.png" alt="Logo VPN">
+                    <div class="product-card" id="prod-vpn" data-aos="fade-up" data-aos-delay="100">
+                        <img src="https://i.ibb.co.com/rR2W03Nj/image.png" alt="Logo VPN" loading="lazy"> 
                         <h2>VPN Premium</h2>
                         <p class="description">Varian Private. Durasi 7 hari (9+ jenis) & 1 bulan (2 jenis). Termasuk Express, Nord, Surfshark, dll. Ada Jaspay.</p>
                         <p class="price">Rp 10.000 - Rp 20.000</p>
                         <a href="https://wa.me/6285853409699?text=Halo%20FHARYSH%20STORE,%20saya%20mau%20order%20VPN%20Premium" class="btn-order" target="_blank">Order via WA</a>
                     </div>
-
-                    <div class="product-card">
-                        <img src="https://cdn.simpleicons.org/zoom/2D8CFF" alt="Logo Zoom">
+                    <div class="product-card" id="prod-zoom" data-aos="fade-up" data-aos-delay="200">
+                        <img src="https://cdn.simpleicons.org/zoom/2D8CFF" alt="Logo Zoom" loading="lazy">
                         <h2>Zoom Pro</h2>
                         <p class="description">Varian Private. Durasi 14 hari. Akun seller. 100 peserta, no limit waktu, cloud record 5GB. Garansi backfree.</p>
                         <p class="price">Rp 10.000</p>
                         <a href="https://wa.me/6285853409699?text=Halo%20FHARYSH%20STORE,%20saya%20mau%20order%20Zoom%20Pro" class="btn-order" target="_blank">Order via WA</a>
                     </div>
-
-                </div>
+                 </div>
             </section>
 
-            <section id="info-tambahan">
-                <h2>📊 Informasi Tambahan</h2>
-                <div class="info-grid">
-                    <a href="https://wa.me/6285853409699?text=Halo%20FHARYSH%20STORE,%20bisa%20jelaskan%20Perbedaan%20Canva?" class="info-card" target="_blank">Info: Perbedaan Canva</a>
-                    <a href="https://wa.me/6285853409699?text=Halo%20FHARYSH%20STORE,%20bisa%20jelaskan%20Perbedaan%20iQiyi?" class="info-card" target="_blank">Info: Perbedaan iQiyi</a>
-                    <a href="https://wa.me/6285853409699?text=Halo%20FHARYSH%20STORE,%20bisa%20jelaskan%20Perbedaan%20Netflix?" class="info-card" target="_blank">Info: Perbedaan Netflix</a>
-                    <a href="https://wa.me/6285853409699?text=Halo%20FHARYSH%20STORE,%20bisa%20jelaskan%20Perbedaan%20Spotify?" class="info-card" target="_blank">Info: Perbedaan Spotify</a>
-                    <a href="https://wa.me/6285853409699?text=Halo%20FHARYSH%20STORE,%20bisa%20jelaskan%20Perbedaan%20Vidio?" class="info-card" target="_blank">Info: Perbedaan Vidio</a>
-                    <a href="https://wa.me/6285853409699?text=Halo%20FHARYSH%20STORE,%20bisa%20jelaskan%20Perbedaan%20YouTube?" class="info-card" target="_blank">Info: Perbedaan YouTube</a>
-                    <a href="https://wa.me/6285853409699?text=Halo%20FHARYSH%20STORE,%20bisa%20jelaskan%20Perbedaan%20Remini?" class="info-card" target="_blank">Info: Perbedaan Remini</a>
-                    <a href="https://wa.me/6285853409699?text=Halo%20FHARYSH%20STORE,%20minta%20Tips%20Netflix-nya" class="info-card" target="_blank">Tanya: Tips Netflix</a>
-                    <a href="https://wa.me/6285853409699?text=Halo%20FHARYSH%20STORE,%20minta%20Tips%20YouTube-nya" class="info-card" target="_blank">Tanya: Tips YouTube</a>
-                </div>
-            </section>
-
-
-            <section id="how-to-order">
-                <h2>Cara Order</h2>
-                <ol>
-                    <li>Pilih produk yang Anda inginkan dari katalog di atas.</li>
-                    <li>Klik tombol "Order via WA" pada produk tersebut.</li>
+            <section id="how-to-order" data-aos="fade-up">
+                 <h2>Cara Order</h2>
+                 <ol>
+                    <li>Jelajahi katalog di bawah atau gunakan search bar / menu dropdown "Katalog" di atas.</li>
+                    <li>Klik tombol "Order via WA" pada produk yang Anda inginkan.</li>
                     <li>Anda akan otomatis diarahkan ke WhatsApp kami.</li>
-                    <li>Kirim format pesanan dan lakukan pembayaran.</li>
-                    <li>Akun akan segera kami proses.</li>
-                </ol>
+                    <li>Sebutkan varian yang Anda pilih (jika ada beberapa).</li>
+                    <li>Lakukan pembayaran sesuai instruksi.</li>
+                    <li>Akun akan segera kami proses setelah konfirmasi.</li>
+                 </ol>
             </section>
 
+            <section id="kontak" data-aos="fade-up"> 
+                <h2>📊 Informasi Tambahan & Kontak</h2>
+                 <p style="text-align: center; max-width: 700px; margin: -1rem auto 2rem auto;">Punya pertanyaan? Butuh penjelasan lebih detail? Klik tombol di bawah atau hubungi kami langsung.</p>
+                <div class="info-grid">
+                     <a href="https://wa.me/6285853409699?text=Halo%20FHARYSH%20STORE,%20bisa%20jelaskan%20Perbedaan%20Canva?" class="info-card" target="_blank" data-aos="fade-up">Info: Perbedaan Canva</a>
+                     <a href="https://wa.me/6285853409699?text=Halo%20FHARYSH%20STORE,%20bisa%20jelaskan%20Perbedaan%20iQiyi?" class="info-card" target="_blank" data-aos="fade-up" data-aos-delay="50">Info: Perbedaan iQiyi</a>
+                     <a href="https://wa.me/6285853409699?text=Halo%20FHARYSH%20STORE,%20bisa%20jelaskan%20Perbedaan%20Netflix?" class="info-card" target="_blank" data-aos="fade-up" data-aos-delay="100">Info: Perbedaan Netflix</a>
+                     <a href="https://wa.me/6285853409699?text=Halo%20FHARYSH%20STORE,%20bisa%20jelaskan%20Perbedaan%20Spotify?" class="info-card" target="_blank" data-aos="fade-up" data-aos-delay="150">Info: Perbedaan Spotify</a>
+                     <a href="https://wa.me/6285853409699?text=Halo%20FHARYSH%20STORE,%20bisa%20jelaskan%20Perbedaan%20Vidio?" class="info-card" target="_blank" data-aos="fade-up">Info: Perbedaan Vidio</a>
+                     <a href="https://wa.me/6285853409699?text=Halo%20FHARYSH%20STORE,%20bisa%20jelaskan%20Perbedaan%20YouTube?" class="info-card" target="_blank" data-aos="fade-up" data-aos-delay="50">Info: Perbedaan YouTube</a>
+                     <a href="https://wa.me/6285853409699?text=Halo%20FHARYSH%20STORE,%20bisa%20jelaskan%20Perbedaan%20Remini?" class="info-card" target="_blank" data-aos="fade-up" data-aos-delay="100">Info: Perbedaan Remini</a>
+                     <a href="https://wa.me/6285853409699?text=Halo%20FHARYSH%20STORE,%20minta%20Tips%20Netflix-nya" class="info-card" target="_blank" data-aos="fade-up" data-aos-delay="150">Tanya: Tips Netflix</a>
+                     <a href="https://wa.me/6285853409699?text=Halo%20FHARYSH%20STORE,%20minta%20Tips%20YouTube-nya" class="info-card" target="_blank" data-aos="fade-up">Tanya: Tips YouTube</a>
+                      <a href="https://wa.me/6285853409699?text=Halo%20FHARYSH%20STORE,%20saya%20ada%20pertanyaan" class="info-card main-contact" target="_blank" data-aos="fade-up" data-aos-delay="50">Hubungi Kami via WA</a>
+                </div>
+            </section>
+            
         </div>
     </main>
 
     <footer>
-        <div class="container">
-            <p>&copy; 2025 FHARYSH STORE. All Rights Reserved.</p>
-        </div>
+        <div class="container"><p>&copy; 2025 FHARYSH STORE. All Rights Reserved.</p></div>
     </footer>
 
+    <a href="#" id="back-to-top" class="back-to-top-btn" aria-label="Kembali ke atas">▲</a>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+
 </body>
-
 </html>
-
-
