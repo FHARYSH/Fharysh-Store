@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const typedTarget = document.querySelector('.typed-text');
     if (typedTarget) {
         new Typed('.typed-text', {
-            strings: ['Hiburan.', 'Kreativitas.', 'Produktivitas.'],
+            strings: ['Hiburan', 'Kreativitas', 'Produktivitas'],
             typeSpeed: 70, backSpeed: 50, backDelay: 1500, loop: true
         });
     }
@@ -225,3 +225,4 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 }); // Akhir dari document.addEventListener('DOMContentLoaded')
+
