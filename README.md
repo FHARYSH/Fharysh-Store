@@ -1,6 +1,6 @@
 # FHARYSH STORE - Website Katalog Akun Premium
 
-![FHARYSH STORE Logo](images/logo fharysh store.png)
+![FHARYSH STORE Logo](images/logo-fharysh-store.png)
 
 Website katalog resmi untuk FHARYSH STORE. Menyediakan akses mudah dan terjangkau ke berbagai akun layanan digital premium favorit Anda, mulai dari hiburan, kreativitas, edukasi, hingga utilitas.
 
