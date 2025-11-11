@@ -58,3 +58,4 @@ Proyek ini dilisensikan di bawah [MIT License](LICENSE).
 ---
 
 _Dibuat oleh Muhammad Iqbal Alfarizi (FHARYSH STORE)_
+ 
